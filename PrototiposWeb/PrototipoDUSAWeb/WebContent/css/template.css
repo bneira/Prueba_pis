@@ -1,0 +1,561 @@
+@charset "UTF-8";
+
+/* #70A7DF  Celeste hover       */
+/* #D5D5D5  Gris linea de borde */
+
+/* #0084D6  Celeste prueba */ 
+
+/* RESET: */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+
+html {height:100%}
+
+body {
+	line-height: 1;
+	color: black;
+	background: white;
+}
+ol, ul {
+	list-style: none;
+}
+table {
+	border-collapse:collapse;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+abbr,acronym {
+	border:0;
+}
+
+/* End RESET */
+
+a {text-decoration: none;}
+a:hover {text-decoration: underline;}
+
+body {
+	font-family: "Tahoma", "Arial";
+	font-size:0.75em;
+	background-color: #CED8F6;
+	height:100%; 
+	min-height:100%; 
+	color: #333333;
+	background: url("/DUSAWeb/images/fondo.jpg");
+}
+
+h1 {
+	font-size: 2.0em;
+	font-weight: bold;	
+	margin-bottom:15px;
+}
+
+h2 {
+	font-size: 1.6em;
+	font-weight: bold;
+	margin-bottom: 0.7em;
+}
+
+h3 {
+	font-size: 1.3em;
+	font-weight: bold;
+}
+
+h4 {
+	font-size: 1.1em;
+	font-weight: 900;
+}
+
+hr {margin: 20px 0px;}
+
+.fleft  {float: left; }
+.fright {float: right;}
+.margin5 {margin: 5px;}
+.width-100 {width: 100%;}
+.width-70  {width: 70%;}
+.clear-30px {width: 100%;height: 30px;}
+.border-black {border: 2px solid black;}
+.sombreado, #contenido, #carrito, #login  {
+	box-shadow: 2px 2px 11px rgba(0, 0, 0, 0.63);
+	-moz-box-shadow: 2px 2px 11px rgba(0, 0, 0, 0.63);
+    -webkit-box-shadow: 2px 2px 11px rgba(0, 0, 0, 0.63);    
+}
+.redondeado, #carrito, #login {	
+    border-radius: 5px;
+	-moz-border-radius:   5px; /* Firefox  */
+    -webkit-border-radius:5px; /* Safari y Chrome */
+}
+
+.titulo {
+	width: 100%;
+	border-bottom: 2px solid #0084D6;
+	line-height: 1.5em;
+}
+
+.box, .box-50, .box-60, .box-90 {
+	margin: auto;	
+	padding: 20px;
+}
+
+.box-30 {width: 30%;}
+.box-50 {width: 50%;}
+.box-60 {width: 60%;}
+.box-90 {width: 90%;}
+
+#container {
+	min-height:100%;
+	width:100%;
+	float: left;
+}
+
+#principal, #contenedor-header > div, #contenedor-footer > div {
+	width: 980px;
+	margin: 0px auto !important;
+}
+
+#contenedor-header {
+	width: 100%;
+	background-color: white;
+	border-bottom: 2px solid #A9BCF5;
+	
+	box-shadow: 2px 2px 11px rgba(0, 0, 0, 0.63);
+	-moz-box-shadow: 2px 2px 11px rgba(0, 0, 0, 0.63);
+    -webkit-box-shadow: 2px 2px 11px rgba(0, 0, 0, 0.63);
+}
+
+#header {
+	width: 100%;
+	margin-bottom: 10px;
+	padding-top: 10px;
+	height: 10%;
+}
+	
+#contenido {	
+	float: left;
+	width:980px;
+	padding: 10px 10px 40px 10px;
+	margin: 5px 0px;
+	background-color: white;
+	/*background: url("/DUSAWeb/images/sombra-top.jpg") 0px 0px repeat-x white;*/
+}
+
+#contenido-top {
+	float: left;
+	margin-bottom: 30px;
+	width: 100%;
+}
+
+#contenido-middle {
+	float: left;
+	width: 100%;
+	background-color: #F1F2F1;
+}
+
+#contenido-derecho {
+	width: 79.5%;
+	float: left;
+	border-top: 1px solid #D5D5D5;
+	border-bottom: 1px solid #D5D5D5;
+	border-right: 1px solid #D5D5D5;
+	border-left: 1px solid #D5D5D5;
+	background-color: white;
+}
+
+/* Estilos para el menu izquierdo */
+#menu-lateral {
+	float: left;
+	width: 20%;
+	background-color: white;
+}
+
+#menu-lateral > ul {
+	border: 1px solid #D5D5D5;
+	width: 100%;
+}
+
+#menu-lateral li {
+	border-top: 1px solid #D5D5D5;
+}
+
+#menu-lateral > ul > li > ul > li > a {
+	background: url("/DUSAWeb/images/derecha.png") 28px 13px no-repeat transparent;
+}
+
+#menu-lateral p, #menu-lateral li {
+	line-height: 35px;
+}
+
+#menu-lateral p {
+	padding-left: 30px;
+}
+
+#menu-lateral p, #menu-lateral a {	
+	line-height: 20px;
+	padding-bottom: 7px;	
+	padding-top: 7px;
+	font-size: 1.0em;
+}
+
+#menu-lateral a {	
+	display: block;
+	color: inherit;
+	padding-left: 40px;
+}
+
+#menu-lateral a:hover {	
+	color: #70A7DF;
+	font-weight: bold;
+}
+
+#menu-lateral .menu-titulo {
+	background-color: #F1F2F1;
+	font-weight: bold;
+	font-size: 1.1em;	
+}
+
+#menu-lateral .menu-titulo-principal {
+	background-color: #70A7DF;
+	color: white;
+	font-weight: bold;
+	font-size: 1.3em;
+}
+/* FIN de Estilos para el menu izquierdo */
+
+#ruta {
+	float: left;
+}
+
+#clearfooter {
+	display:block;
+	height:50px;
+	float: left;
+	width: 100%;
+}
+#contenedor-footer {
+	clear:both;
+	float: left;
+	width: 100%;	
+	height:50px;
+	/*background-color: #70A7DF;*/
+	background-color: #585858;
+	color: white;
+	text-align:center;
+	margin:-50px auto 0 auto;
+	position:relative;
+	
+	box-shadow: 2px 2px 11px rgba(0, 0, 0, 0.63);
+	-moz-box-shadow: 2px 2px 11px rgba(0, 0, 0, 0.63);
+    -webkit-box-shadow: 2px 2px 11px rgba(0, 0, 0, 0.63);
+}
+
+#footer {
+	float:left;
+	width: 100%;
+	padding: 10px 0px;
+	height: 30px;
+	line-height: 10px;
+}
+
+#carrito {
+	/*border: 2px solid black;*/
+	margin: 10px 10px;
+	height: 75px;	
+	float: right;	
+	background-color: #70A7DF;
+	color: white;
+	font-weight: bold;	
+	padding: 5px;
+}
+#carrito p > a {
+	margin: 5px 10px;
+	font-size: 1.25em;	
+	color: white;
+	font-weight: bold;
+}
+
+#carrito p {
+	text-align: center;
+	/*padding-bottom: 3px;*/
+	line-height: 20px;
+}
+
+#carrito p:first-child a {
+	color: #FFFF00;
+}
+
+#carrito a:hover {
+	color: #F4FA58;
+}
+
+#carrito li {
+	float: left;
+}
+
+#carrito li a {
+	margin: 5px 10px;
+	color: white;
+	font-weight: bold;
+}
+
+#login {
+	border: 2px solid black;
+	float: right;
+	width: 400px;
+	margin-top: 200px;
+}
+
+#login form {
+	margin: 50px;	
+}
+
+#login form .line-form {
+	margin-top: 40px;	
+}
+
+#login h2 {
+	margin: 10px 0px 0px 20px;	
+}
+
+#login label {
+	float: left;
+	line-height: 22px;
+	width: 100px;	
+}
+
+.aux td {
+	height: 40px;
+	line-height: 40px;
+}
+
+
+/* Estilo Pagina Productos */
+#lista-productos {
+	width: 100%;
+	float: right;
+	margin-top: 20px;
+	line-height: 20px;
+	border: 1px solid #D5D5D5;
+}
+
+.producto-seleccionado {
+	color: white;
+	background-color: #70A7DF;
+	font-weight: 700;
+	font-size: 1.1em;
+}
+
+#lista-productos .producto{
+	border-top: 1px solid #D5D5D5;
+	float: left;
+	width: 100%;	
+	cursor: pointer;
+}
+
+#lista-productos .producto p:last-child{
+	color:#5882FA;
+	font-weight: bold;
+}
+
+#lista-productos .producto:hover p:last-child{
+	color: white;
+}
+
+#lista-productos .producto:hover{
+	color: white;
+	background-color: #70A7DF;
+	font-weight: 700;
+	font-size: 1.1em;
+}
+
+#lista-productos .producto p{
+	margin: 0px 10px;
+	line-height: 25px;
+}
+
+#lista-productos .descripcion{
+	margin: 3px;
+	float: left;
+	width: 100%;
+}
+
+#lista-productos .descripcion .precio{
+	font-size: 1.5em;
+	color: red;
+	clear: both;
+	font-wieght: bold;
+}
+
+#lista-productos .descripcion div{
+	margin: 10px;
+}
+
+#lista-productos .producto span input{
+	margin-left: 20px;
+	text-align: right;
+}
+
+#paginacion {
+	width: 100%;
+	float: left;
+	margin: 20px 2px;
+}
+
+#paginacion ul {
+	float: right;
+}
+
+#paginacion li {
+	float: left;
+	margin-left: 5px;
+}
+
+#buscador {
+	float: right;
+	margin-right: 30%;
+}
+
+#categorias {
+	float: left;
+	width: 20%;
+	border: 1px solid #D5D5D5;
+	background-color: white
+}
+
+#categorias h2 {
+	background-color: #70A7DF;
+	color: white;
+	font-weight: bold;
+	margin-bottom: 0px;
+	padding-left: 30px;
+	line-height: 34px;
+}
+
+#categorias li {
+	padding: 3px 10px;
+	border-bottom: 1px dashed #D5D5D5;
+}
+
+#categorias div {
+	float: right;
+	margin: 6px 10px;
+}
+/* FIN estilo Pagina Productos */
+
+.accord-content { display: none; }
+
+
+/*     Estilo para las tablas de "pedido-actual" y "mis-pedidos"    */
+.listado table {
+	border: 1px solid #D5D5D5;
+}
+
+.listado tr {
+	line-height: 40px;
+}
+
+.listado th, .listado td {
+	/*border-right: 2px solid black;*/
+	padding-left: 3px;
+	text-align: center;
+}
+.listado th {
+	background-color: #70A7DF;
+	color: white;
+	font-weight: bold;
+}
+.listado td {
+	border-top: 1px solid #D5D5D5;
+}
+
+.listado .impar {
+	/* background-color: #EFF5FB; */
+	background-color: #FAFAFA;
+}
+/* FIN DE Estilo para las tablas de "pedido-actual" y "mis-pedidos" */
+
+
+/*     Estilo general para formularios    */
+.formulario label {
+	width: 200px;
+	display: inline-block;
+}
+
+.formulario .linea-form {
+	margin-bottom: 15px;
+}
+
+.formulario .input-text input {
+	width: 250px;
+	display: inline-block;
+}
+
+
+.formulario input {	
+    border-radius: 3px;
+	-moz-border-radius:   3px; /* Firefox  */
+    -webkit-border-radius:3px; /* Safari y Chrome */
+    padding: 4px;    
+    border: 1px solid #A4A4A4;
+}
+
+.formulario input:focus {	
+    border: 1px solid #0084D6;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.63);
+	-moz-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.63);
+    -webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.63);    
+}
+
+/* FIN DE Estilo general para formularios  */
+
+.usuario {
+	color: #0084D6;
+}
+
+.lista-simple {
+	width: 100%;
+}
+
+.lista-simple td{
+	line-height: 1.7em;
+	padding-left: 10px;	
+	cursor: pointer;
+}
+
+.lista-simple td:hover{
+	color: white;
+	font-weight: bold;
+	background-color: #70A7DF;
+}
+
+.lista-simple .impar {
+	background-color: #FAFAFA;
+}
+
